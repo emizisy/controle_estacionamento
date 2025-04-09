@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro de Reserva</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Cadastro de Reserva</h1>
+    <form id="reservaForm">
+      <input type="text" placeholder="Placa do Veículo" id="placa" required />
+      <input type="text" placeholder="Nome do Proprietário" id="proprietario" required />
+      <input type="text" placeholder="Número do Apartamento" id="apartamento" required />
+      <input type="text" placeholder="Bloco do Apartamento" id="bloco" required />
+      <input type="text" placeholder="Modelo do Veículo" id="modelo" required />
+      <input type="text" placeholder="Cor do Veículo" id="cor" required />
+      <input type="number" placeholder="Número da Vaga" id="vaga" required />
+      <button type="submit">Salvar</button>
+
+    </form>
+  </div>
+
+  <div id="modalSucesso">
+    <div class="modal-content">
+      <h2>✅ Cadastro realizado com sucesso!</h2>
+      <button onclick="fecharModal()">Fechar</button>
+    </div>
+  </div>
+
+  <script src="js/cadastro.js"></script>
+</body>
